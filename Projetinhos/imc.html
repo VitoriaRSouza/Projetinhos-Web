@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+<title>Cálculo do IMC</title>
+</head>
+<body>
+<script>
+    function calcularImc() {
+        peso = parseFloat(document.getElementById("peso").value);
+        altura = parseFloat(document.getElementById("altura").value);
+        imc = peso/altura**2;
+        document.getElementById("imc").innerHTML="seu IMC é "+imc;
+        if( imc < 18.5 ) {
+            avaliacao = "magro";
+        } else if ( imc < 25 ) {
+            avaliacao = "normal";
+        } else if ( imc < 30 ) {
+            avaliacao = "sobrepeso";
+        } else {
+            avaliacao = "obeso";
+        }
+        document.getElementById("avaliacao").innerHTML = avaliacao;
+    }
+</script>    
+peso:<input type="text" id="peso"/><br/>
+altura:<input type="altura" id="altura"/><br/>
+<button type="button" onclick="calcularImc()">calcular</button>
+<p id="imc"></p>
+<p id="avaliacao"></p>
+</body>
+</html>
