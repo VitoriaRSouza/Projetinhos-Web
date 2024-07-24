@@ -12,13 +12,13 @@
         imc = peso/altura**2;
         document.getElementById("imc").innerHTML="seu IMC é "+imc;
         if( imc < 18.5 ) {
-            avaliacao = "magro";
+            avaliacao = "Magro";
         } else if ( imc < 25 ) {
-            avaliacao = "normal";
+            avaliacao = "Normal";
         } else if ( imc < 30 ) {
-            avaliacao = "sobrepeso";
+            avaliacao = "Sobrepeso";
         } else {
-            avaliacao = "obeso";
+            avaliacao = "Obeso";
         }
         document.getElementById("avaliacao").innerHTML = avaliacao;
     }
