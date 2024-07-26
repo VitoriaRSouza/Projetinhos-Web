@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="designphp.css">
 </head>
-
 <body>
 <form action="cadastro.php" method="get">
-RE:<input type="text" name="re"/><br/>
-Nome:<input type="text" name="nome"/><br/>
-Data Nascimento:<input type="text" name="dataNascimento"/><br/>
-Salario:<input type="text" name="salario"/><br/>
-<input type="submit" value="Cadastrar"/>
-
+<div class="Dados">
+    RE <br> 
+    <div class="RE"><input type="text" name="re"/><br/><br> </div>
+    Nome <br> 
+    <input type="text" name="nome"/><br/><br> 
+    Data Nascimento <br> 
+    <input type="text" name="dataNascimento"/><br/><br> 
+    Salario <br> 
+    <input type="text" name="salario"/><br/><br> 
+</div> 
+<div class="button">
+    <input type="submit" value="Cadastrar"/>
+</div>
 </form>   
 </body>
 </html>
