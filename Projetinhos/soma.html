@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+<title>cálculo simples</title>
+</head>
+<body>
+<script>
+    function calcularSoma() {
+        x = parseInt(document.getElementById("numero1").value);
+        y = parseInt(document.getElementById("numero2").value);
+        soma = x + y;
+        document.getElementById("resultado").innerHTML=soma;
+    }
+</script>
+número 1:<input type="text" id="numero1"/><br/>
+número 2:<input type="text" id="numero2"/><br/>
+<button type="button" onclick="calcularSoma()">Calcular</button>
+<br/>
+Resultado: <p id="resultado"></p>
+</body>
+</html>
